@@ -1,8 +1,7 @@
-import React, {useEffect, Fragment, useState} from 'react';
+import React, {useEffect, Fragment, useState, useReducer} from 'react';
 import Head from 'next/head'
 
-const withBaseLayout = Component => props => {
-
+export const useDeviceInfo = () => {
     const [device, setDevice] = useState("desktop");
 
     useEffect(() => {
@@ -22,7 +21,13 @@ const withBaseLayout = Component => props => {
         setDevice(deviceName);
     };
 
-    console.log("deviceName", device);
+    return device;
+};
+
+const withBaseLayout = Component => props => {
+
+    const device = useDeviceInfo();
+
     return (
         <Fragment>
             <Head>

@@ -15,6 +15,7 @@ const SEOHeadTag = (props) => {
             {/*<script src="/ung-ho/js/jquery.countdown.min.js"/>*/}
             {/*<script src="/ung-ho/vegas/vegas.min.js"/>*/}
             {/*<script src="/ung-ho/js/wow.min.js"/>*/}
+
             <title>1 cho bạn, 1 để sẻ chia - Chiến dịch phi lợi nhuận hỗ trợ cửa hàng vượt khó</title>
 
             <meta name="description" content="description of SEO page"/>

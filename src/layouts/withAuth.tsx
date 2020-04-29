@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import authStyle from "../screens/auth/authen.module.css";
 
 const withAuth = Component => props => {
+
     const [auth, setAuth] = useState(null);
 
     const authentication = () => {

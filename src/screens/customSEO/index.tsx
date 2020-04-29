@@ -1,17 +1,19 @@
 import React, {Fragment, useEffect} from 'react'
 import {SEOHeadTag} from "./components/SEOHeadTag";
-import withBaseLayout from "../../layouts/withBaseLayout";
+import withBaseLayout, {useDeviceInfo} from "../../layouts/withBaseLayout";
 
 let CustomSEOPage = (props) => {
+    const device = useDeviceInfo();
 
     //  @ts-ignore
     const {seoData} = props;
+
     return(
         <Fragment>
             <SEOHeadTag/>
 
             <div className="container">
-                <h1>SEO custom page</h1>
+                <h1>SEO custom page {device}</h1>
 
                 <p>{seoData}</p>
             </div>
