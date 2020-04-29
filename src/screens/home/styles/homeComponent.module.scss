@@ -1,0 +1,10 @@
+.componentWrap{
+  padding: 15px;
+  background-color: deepskyblue;
+  .itemComponent{
+    margin: 20px;
+    min-height: 100px;
+    min-width: 200px;
+    background-color: blue;
+  }
+}
