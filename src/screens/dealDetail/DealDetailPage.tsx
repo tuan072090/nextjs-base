@@ -7,7 +7,7 @@ import {dealReducer} from './reducer'
 
 const DealDetailPage = withBaseLayout(({deal, error}) => {
     const [dealData, dispatch] = useReducer(dealReducer, null);
-    
+
     const saveDealToReducer = () => {
         // @ts-ignore
         dispatch({ type: 'add', data: deal });
